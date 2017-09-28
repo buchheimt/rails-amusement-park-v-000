@@ -1,0 +1,16 @@
+<h1>Sign In</h1>
+
+<%= form_tag signin_path do %>
+
+  <p>
+    <%= label_tag "user[name]", "Name" %>
+    <%= text_field_tag "user[name]" %>
+  </p>
+
+  <p>
+    <%= label_tag "user[password]", "Password" %>
+    <%= password_field_tag "user[password]" %>
+  </p>
+
+  <%= submit_tag "Sign In" %>
+<% end %>
